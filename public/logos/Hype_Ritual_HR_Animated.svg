@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="animatedGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1">
+        <animate attributeName="stop-color" values="#6366F1;#EC4899;#8B5CF6;#6366F1" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#8B5CF6">
+        <animate attributeName="stop-color" values="#8B5CF6;#6366F1;#EC4899;#8B5CF6" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <circle cx="300" cy="300" r="250" stroke="url(#animatedGradient)" stroke-width="8" fill="none" opacity="0.6"/>
+
+  <rect x="190" y="200" width="25" height="200" fill="url(#animatedGradient)" rx="8"/>
+  <rect x="265" y="200" width="25" height="200" fill="url(#animatedGradient)" rx="8"/>
+  <rect x="215" y="285" width="50" height="20" fill="url(#animatedGradient)" rx="6"/>
+
+  <rect x="330" y="200" width="25" height="200" fill="url(#animatedGradient)" rx="8"/>
+  <path d="M355 200 H410 Q450 200 450 250 Q450 295 410 295 H355 Z" fill="url(#animatedGradient)"/>
+  <path d="M355 295 L455 400" stroke="url(#animatedGradient)" stroke-width="25" stroke-linecap="round"/>
+</svg>

@@ -5,7 +5,36 @@ body {
   color: white;
   overflow-x: hidden;
 }
+@keyframes marqueeLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
+@keyframes marqueeRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marqueeLeft 20s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marqueeRight 25s linear infinite;
+}
+
+.marquee-container:hover .animate-marquee-left,
+.marquee-container:hover .animate-marquee-right {
+  animation-play-state: paused;
+}
 /* Smooth scrolling
 html {
   scroll-behavior: smooth;

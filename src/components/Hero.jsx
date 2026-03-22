@@ -57,14 +57,35 @@ export default function Hero() {
           transition={{ delay: 0.8 }}
           className="mt-12 flex flex-col md:flex-row gap-6 justify-center"
         >
-          <button className="relative px-10 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 hover:scale-110 transition-all duration-300 overflow-hidden group">
+          {/* <button className="relative px-10 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 hover:scale-110 transition-all duration-300 overflow-hidden group">
             <span className="relative z-10">Get Free Consultation</span>
             <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition" />
-          </button>
+          </button> */}
+          <button
+  onClick={() => {
+    document.getElementById("contact")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+  className="relative px-10 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 hover:scale-110 transition-all duration-300 overflow-hidden group"
+>
+  <span className="relative z-10">Get Free Consultation</span>
+  <span className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition" />
+</button>
 
-          <button className="px-10 py-4 rounded-full border border-white/30 hover:bg-white hover:text-black transition-all duration-300">
+          {/* <button className="px-10 py-4 rounded-full border border-white/30 hover:bg-white hover:text-black transition-all duration-300">
             View Our Work
-          </button>
+          </button> */}
+          <button
+  onClick={() => {
+    document.getElementById("work")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }}
+  className="px-10 py-4 rounded-full border border-white/30 hover:bg-white hover:text-black transition-all duration-300"
+>
+  View Our Work
+</button>
         </motion.div>
       </motion.div>
     </section>
